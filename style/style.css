@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px !important;
+  }
+}
+body {
+  padding-bottom: 50px;
+  background-color: #dddddddd;
+}
+body header .container h1 {
+  padding: 20px 0;
+}
+body header .container h1 span {
+  color: red;
+}
+body header .container form {
+  padding: 20px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+body header .container form label {
+  padding-right: 10px;
+}
+body header .container form input {
+  margin-right: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+body header .container form select {
+  height: 50px;
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+body header .container form select option {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+body #users .container #usersAbout {
+  border-spacing: 0;
+  border: 1px solid #555;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+body #users .container #usersAbout .table-head {
+  height: 50px;
+  background-color: #ffffff77;
+}
+body #users .container #usersAbout .table-head td {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+body #users .container #usersAbout .userAbout td {
+  padding: 15px 20px;
+  border-top: 1px solid #555;
+}
+body #users .container #usersAbout .userAbout td div {
+  display: flex;
+  align-items: center;
+}
+body #users .container #usersAbout .userAbout td div span .name {
+  font-weight: bold;
+}
+body #users .container #usersAbout .userAbout td div img {
+  width: 40px;
+  margin-right: 5px;
+}
+body #users .container .show-users {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  margin: 20px auto 0 auto;
+}
+body #users .container .show-users .head select {
+  height: 40px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+body #users .container .show-users .head select option {
+  font-size: 20px;
+}
+body #users .container .show-users .body {
+  display: flex;
+}
+body #users .container .show-users .body span {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+body #users .container .show-users .body span:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+body #users .container .show-users .body span:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

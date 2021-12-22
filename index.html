@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>
+                    React Table + Tailwind CSS = <span>&#10084;</span>
+                </h1>
+                <form action="">
+                    <label for="search">Search</label>
+                    <input type="text" id="search">
+                    <label for="role">Role:</label>
+                    <select name="" id="role">
+                        <option value="All">All</option>
+                        <option value="All">Name</option>
+                        <option value="All">username</option>
+                        <option value="All">phone</option>
+                        <option value="All">website</option>
+                        <option value="All">city</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <div id="users">
+            <div class="container">
+                <table id="usersAbout">
+                    <tr class="table-head">
+                        <td>Name</td>
+                        <td>Username</td>
+                        <td>Phone</td>
+                        <td>Website</td>
+                        <td>City</td>
+                    </tr>
+                </table>
+                <div class="show-users">
+                    <div class="head">
+                        Page <span>1</span> of <span>4</span>
+                        <select name="" id="showUsers">
+                            <option value="show5">Show 5</option>
+                            <option value="show1">Show 1</option>
+                            <option value="show2">Show 2</option>
+                            <option value="show3">Show 3</option>
+                            <option value="show4">Show 4</option>
+                        </select>
+                    </div>
+                    <div class="body">
+                        <span onclick="createUser()">+</span>
+                        <span onclick="deleteUser()">-</span>
+                        <span>&#60;&#60;</span>
+                        <span>&#60;</span>
+                        <span>&#62;</span>
+                        <span>&#62;&#62;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app/app.js"></script>
+    </body>
+</html>
